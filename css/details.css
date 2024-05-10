@@ -1,0 +1,61 @@
+#routines {
+    font-size: 3mm;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#routines tr:nth-child(1){
+    font-weight: bold;
+}
+
+#routines tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#routines td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}
+
+#personality {
+    font-size: 3mm;
+    width: 100%;
+    table-layout: fixed;
+    text-wrap: nowrap;
+    border-collapse: collapse;
+}
+
+#personality tr:nth-child(1){
+    font-weight: bold;
+}
+
+#personality tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#personality td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}
+
+#trait {
+    font-size: 3.5mm;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    /* text-wrap: nowrap; */
+}
+
+#trait tr:nth-child(1){
+    font-weight: bold;
+}
+
+#trait tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#trait td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}

@@ -1,0 +1,139 @@
+/*advancement*/
+#advancement {
+    width: 100%;
+    font-size: 3mm;
+    line-height: 3mm;
+    border-collapse: collapse;
+}
+
+#advancement td:nth-child(1),
+#advancement td:nth-child(4){
+    text-align: left;
+}
+
+#advancement tr:nth-child(1){
+    font-weight: bold;
+    text-align: center;
+}
+
+#advancement td:nth-child(2),
+#advancement td:nth-child(3),
+#advancement td:nth-child(5),
+#advancement td:nth-child(6){
+    text-align: center;
+}
+
+#advancement tr:nth-child(odd){
+    background-color: #efefef;
+}
+
+/*leveling*/
+#leveling{
+    width: 100%;
+    margin-top: 5mm;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: 3mm;
+    line-height: 3mm;
+    text-align: center;
+}
+
+#leveling th, #leveling td{
+    border-collapse: collapse;
+}
+
+#leveling tr:nth-child(1),
+#leveling tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*armor*/
+#armor{
+    font-size: 3mm;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#armor tr:nth-child(1){
+    font-weight: bold;
+    text-align: left;
+}
+
+#armor td:nth-child(1){
+    padding-left: 1em;
+}
+
+#armor tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*donning*/
+#donning{
+    width: 50%;
+    font-size: 3mm;
+    border-collapse: collapse;
+}
+
+#donning tr:nth-child(1){
+    font-weight: bold;
+}
+
+#donning tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*weapons table*/
+#weapons{
+    font-size: 3mm;
+    line-height: 3.6mm;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#weapons td:nth-child(1){
+    padding-left: 1em;
+}
+
+#weapons tr:nth-child(1){
+    font-weight: bold;
+}
+
+#weapons td:nth-child(2),
+#weapons td:nth-child(4){
+    text-align: center;
+}
+
+#weapons tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*containers*/
+#containers {
+    width: 60%;
+    font-size: 3mm;
+    border-collapse: collapse;
+}
+
+#containers tr:nth-child(1){
+    font-weight: bold;
+}
+
+#containers tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*gear*/
+#gear {
+    width: 100%;
+    font-size: 2.8mm;
+    border-collapse: collapse;
+    line-height: 3mm;
+}
+
+#gear tr:nth-child(1){
+    font-weight: bold;
+}
+
+#gear tr:nth-child(even){
+    background-color: #efefef;
+}

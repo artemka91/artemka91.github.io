@@ -1,0 +1,96 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+
+page-a4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0;
+    height: 210mm;
+    min-height: 210mm;
+    max-height: 210mm;
+    width: 297mm;
+    min-width: 297mm;
+    max-width: 297mm;
+    background-color: #ffffff;
+    page-break-after: always;
+    font-family: Caveat;
+}
+
+page-a5{
+    width: 148mm;
+    min-width: 148mm;
+    max-width: 148mm;
+    height: 210mm;
+    min-height: 210mm;
+    max-height: 210mm;
+    padding: 10mm;
+    box-sizing: border-box; 
+    font-size: 2mm;
+}
+
+h1{
+    font-size: 8mm;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 5mm;
+    width: fit-content;
+    border: 0.5mm double #000;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+h2{
+    font-size: 6mm;
+    font-weight: bold;
+    margin: 0;
+    width: fit-content;
+    border: 0.5mm solid #000;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+h3{
+    font-size: 5mm;
+    font-weight: bold;
+    margin: 0;
+}
+
+h4{
+    font-size: 3mm;
+    font-weight: bold;
+    margin: 0;
+}
+
+p{
+    text-indent: 2em;
+    font-size: 4mm;
+    line-height: 4mm;
+    margin: 0;
+}
+
+span{
+    font-size: 4mm;
+    line-height: 4mm;
+    display: block;
+}
+
+ul{
+    margin: 0;
+    padding-left: 5mm;
+    font-size: 4mm;
+}
+
+@font-face {
+    font-family: Kurland;
+    src: url(../fonts/Kurland.otf);
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(../fonts/Caveat.ttf);
+}
