@@ -1,0 +1,592 @@
+#journal{
+    padding-top: 5vw;
+}
+
+@media print{
+    #journal{
+        padding-top: 0;
+    }
+}
+/*photo*/
+#portrait{
+    width: 50mm;
+    height: 50mm;
+    object-fit: cover;
+    transform: rotate(2deg);
+    display: inline-block;
+}
+
+#portrait img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    filter: brightness(2) grayscale(100%);
+    border: 5px solid #000;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/*name, class, race and etc.*/
+#class-race{
+    float: right;
+    width: 70mm;
+    height: 50mm;
+}
+
+#char-name{
+    font-size: 10mm;
+    font-weight: bold;
+}
+
+#char-name-label{
+    font-size: 3mm;
+    line-height: 0;
+}
+
+#class-race .param-name{
+    padding-top: 2mm;
+    font-size: 6mm;
+    font-weight: bold;
+}
+
+#class-race .param-label{
+    font-size: 3mm;
+    line-height: 0;
+}
+
+/*appearance table*/
+#appearance{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#appearance tr:nth-child(odd){
+    font-size: 6mm;
+    font-weight: bold;
+    vertical-align:bottom;
+}
+
+#appearance tr:nth-child(even){
+    font-size: 3mm;
+    line-height: 0;
+    vertical-align:top;
+    height: 2mm;
+}
+
+/*traits*/
+.traits{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.traits-title{
+    padding-top: 5mm;
+}
+
+.personality{
+    font-size: 5mm;
+    font-weight: normal;
+    padding-top: 5mm;
+}
+
+.personality .name{
+    font-weight: bold;
+    font-size: 5mm;
+}
+
+/*routines table*/
+#routines {
+    font-size: 3mm;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#routines tr:nth-child(1){
+    font-weight: bold;
+}
+
+#routines tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#routines td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}
+
+/*personality table*/
+#personality {
+    font-size: 3mm;
+    width: 100%;
+    table-layout: fixed;
+    text-wrap: nowrap;
+    border-collapse: collapse;
+}
+
+#personality tr:nth-child(1){
+    font-weight: bold;
+}
+
+#personality tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#personality td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}
+
+/*traits table*/
+#trait {
+    font-size: 3.5mm;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#trait tr:nth-child(1){
+    font-weight: bold;
+}
+
+#trait tr:nth-child(even){
+    background-color: #efefef;
+}
+
+#trait td:nth-child(odd){
+    text-align: center;
+    width: 4%;
+}
+
+/*advancing table*/
+#advancing {
+    width: 100%;
+    font-size: 3mm;
+    line-height: 3mm;
+    border-collapse: collapse;
+}
+
+#advancing td:nth-child(1),
+#advancing td:nth-child(4){
+    text-align: left;
+}
+
+#advancing tr:nth-child(1){
+    font-weight: bold;
+    text-align: center;
+}
+
+#advancing td:nth-child(2),
+#advancing td:nth-child(3),
+#advancing td:nth-child(5),
+#advancing td:nth-child(6){
+    text-align: center;
+}
+
+#advancing tr:nth-child(odd){
+    background-color: #efefef;
+}
+
+/*leveling table*/
+#leveling{
+    width: 100%;
+    margin-top: 5mm;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: 3mm;
+    line-height: 3mm;
+    text-align: center;
+}
+
+#leveling th, #leveling td{
+    border-collapse: collapse;
+}
+
+#leveling tr:nth-child(1),
+#leveling tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*armor table*/
+#armor{
+    font-size: 3mm;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#armor tr:nth-child(1){
+    font-weight: bold;
+    text-align: left;
+}
+
+#armor td:nth-child(1){
+    padding-left: 1em;
+}
+
+#armor tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*donning*/
+#donning{
+    width: 50%;
+    font-size: 3mm;
+    border-collapse: collapse;
+}
+
+#donning tr:nth-child(1){
+    font-weight: bold;
+}
+
+#donning tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*weapons table*/
+#weapons{
+    font-size: 3mm;
+    line-height: 3.6mm;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#weapons td:nth-child(1){
+    padding-left: 1em;
+}
+
+#weapons tr:nth-child(1){
+    font-weight: bold;
+}
+
+#weapons td:nth-child(2),
+#weapons td:nth-child(4){
+    text-align: center;
+}
+
+#weapons tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*containers table*/
+#containers {
+    width: 60%;
+    font-size: 3mm;
+    border-collapse: collapse;
+}
+
+#containers tr:nth-child(1){
+    font-weight: bold;
+}
+
+#containers tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*gear*/
+#gear {
+    width: 100%;
+    font-size: 2.8mm;
+    border-collapse: collapse;
+    line-height: 3mm;
+}
+
+#gear tr:nth-child(1){
+    font-weight: bold;
+}
+
+#gear tr:nth-child(even){
+    background-color: #efefef;
+}
+
+/*= Battle Sheets =*/
+.battle-sheets h2{
+    margin: -5mm auto 2mm auto;
+}
+
+/*whole width flex container*/
+.battle-sheets .w-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2mm;
+}
+
+/*ability-scores*/
+.battle-sheets #ability-scores .score-cont{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4mm;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+.battle-sheets #ability-scores .score-cont .score{
+    width: 10mm;
+    height: 5mm;
+    border: solid 0.1em black;
+    border-bottom: 0;
+    border-radius: 2mm 2mm 0 0;
+    z-index: 0;
+}
+
+.battle-sheets #ability-scores .score-cont .mod{
+    width: 10mm;
+    height: 10mm;
+    border: solid 0.1em black;
+    border-radius: 0 0 2mm 2mm;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.battle-sheets #ability-scores .score-cont .border{
+    margin-top: -5mm;
+    z-index: 0;
+    border-radius: 2mm;
+    border: solid 0.1em black;
+    padding: 5mm 1mm 1mm 0.5mm;
+    font-weight: normal;
+}
+
+.battle-sheets #ability-scores .score-cont .border .string{
+    font-size: 3.2mm;
+    padding: 0.2em 0 0 0;
+    line-height: 2.4mm;
+}
+
+.battle-sheets #ability-scores .score-cont .border .value{
+    width: 5mm;
+    margin: 0 0.1em 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+.battle-sheets #ability-scores .score-cont .border .value::before{
+    content: "⦾__";
+}
+
+/*battle scores*/
+.battle-sheets #battle-scores .score-cont{
+    width:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 3.5mm;
+    font-weight: bold;
+    align-items: center;
+}
+
+.battle-sheets #battle-scores .score-cont .circle{
+    width: 12mm;
+    height: 12mm;
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid 0.1em black;
+    border-radius: 15mm;
+}
+
+/*hits, temp hits, dices, exp, deaththrows*/
+.battle-sheets #hits{
+    font-size: 4mm;
+    font-weight: bold;
+}
+
+.battle-sheets #hits .field-cont{
+    text-align: center;
+}
+
+.battle-sheets #hits .field{
+    width: 20mm;
+    height: 40mm;
+    border: solid 0.1em black;
+    border-radius: 4mm;
+    font-size: 4mm;
+    font-weight: normal;
+}
+
+.battle-sheets #hits .field-cont .exp{
+    background-image: url("../img/medal.png");
+}
+
+.battle-sheets #hits .field-cont .curr{
+    background-image: url("../img/whart.png");
+}
+
+.battle-sheets #hits .field-cont .dice{
+    background-image: url("../img/dice.png");
+}
+
+.battle-sheets #hits .field-cont .temp{
+    background-image: url("../img/bhart.png");
+}
+
+.battle-sheets #hits .field-cont .dead{
+    background-image: url("../img/skull.png");
+}
+
+.battle-sheets #hits .field-cont .exp,
+.battle-sheets #hits .field-cont .curr,
+.battle-sheets #hits .field-cont .dice,
+.battle-sheets #hits .field-cont .temp,
+.battle-sheets #hits .field-cont .dead{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: color;
+}
+
+.battle-sheets #hits .field-cont .exp .up,
+.battle-sheets #hits .field-cont .curr .up,
+.battle-sheets #hits .field-cont .dice .up{
+    padding-bottom: 8mm;
+}
+
+.battle-sheets #hits .field-cont .exp .down,
+.battle-sheets #hits .field-cont .curr .down,
+.battle-sheets #hits .field-cont .dice .down{
+    margin-top: 21mm;
+}
+
+.battle-sheets #hits .field-cont .dead{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.battle-sheets #hits .field-cont .exp .line,
+.battle-sheets #hits .field-cont .curr .line,
+.battle-sheets #hits .field-cont .dice .line,
+.battle-sheets #hits .field-cont .dead .line{
+    height: 0.05em;
+    background-color: #000000;
+}
+
+/* conditions, attack & abilities tables*/
+.battle-sheets table{
+    width: 100%;
+    border: solid 0.1em black;
+    border-radius: 4mm;
+    font-size: 4mm;
+}
+
+.battle-sheets table thead td{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 0.1em black;
+}
+
+.battle-sheets #attacks thead td:nth-child(1),
+.battle-sheets #abilities thead td:nth-child(1){
+    text-align: left;
+    padding-left: 1em;
+}
+
+.battle-sheets #conditions tbody tr:nth-child(even),
+.battle-sheets #attacks tbody tr:nth-child(even),
+.battle-sheets #abilities tbody tr:nth-child(even){
+    background-color: #efefef;
+}
+
+.battle-sheets #conditions tbody td:nth-child(1){
+    width: 40mm;
+}
+
+.battle-sheets #conditions tbody td:nth-child(2){
+    width: 60mm;
+}
+
+.battle-sheets #attacks tbody td:nth-child(1){
+    width: 40mm;
+}
+
+.battle-sheets #attacks tbody td:nth-child(2){
+    width: 10mm;
+}
+
+.battle-sheets #attacks tbody td:nth-child(3){
+    width: 30mm;
+}
+
+/*spell casting*/
+.battle-sheets #casting{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 4mm;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    text-align: center;
+    margin-bottom: 2mm;
+}
+
+.battle-sheets #casting .cont{
+    width: 30%;
+}
+
+.battle-sheets #casting .cont .circle{
+    width: 12mm;
+    height: 12mm;
+    box-sizing: border-box;
+    border: solid 0.1em black;
+    border-radius: 15mm;
+    margin: 0 auto;
+}
+
+.battle-sheets #casting .cont .field{
+    width: 100%;
+    height: 8mm;
+    box-sizing: border-box;
+    border: solid 0.1em black;
+    border-radius: 8mm;
+    margin: 2mm auto;
+}
+
+.battle-sheets #levels{
+    width: 100%;
+    height: 9mm;
+    box-sizing: border-box;
+    border: solid 0.5mm black;
+    border-radius: 3.6mm;
+    display: flex;
+    justify-content: space-around;
+}
+
+.battle-sheets #levels .level{
+    width: 8mm;
+    font-size: 6mm;
+    font-weight: bold;
+    text-align: center;
+}
+
+.battle-sheets #levels .level .super{
+    display: inline;
+    font-size: 3mm;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+.battle-sheets #slots{
+    width: 100%;
+    border-radius: 4mm;
+    display: flex;
+    justify-content: space-around;
+}
+
+.battle-sheets #slots .stripe{
+    width: 8mm;
+    font-size: 8mm;
+    text-wrap: wrap;
+    height: fit-content;
+    text-align: center;
+    font-weight: normal;
+    line-height: 0.7em;
+    border: solid 0.5mm black;
+    border-radius: 0 0 4mm 4mm;
+    border-top: none;
+    box-sizing: border-box;
+    padding-bottom: 1mm;
+}

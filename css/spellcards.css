@@ -1,0 +1,73 @@
+#spellcards{
+    padding-top: 5vw;
+}
+
+@media print{
+    #spellcards{
+        padding-top: 0;
+    }
+}
+
+.cut-marks-ver{
+    position: absolute;
+    width: 297mm;
+    height: 210mm;
+    padding-left: 0.5in;
+    display: flex;
+}
+
+.cut-marks-ver .cut-marks{
+    width: 2.5in;
+    min-width: 2.5in;
+    max-width: 2.5in;
+    height: 100%;
+    border: solid 0.01in black;
+    border-top: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    margin: 0 0.2in 0 0;
+}
+
+.cut-marks-hor{
+    position: absolute;
+    width: 297mm;
+    height: 210mm;
+    padding-top: 0.5in;
+}
+
+.cut-marks-hor .cut-marks{
+    width: 100%;
+    height: 3.5in;
+    border: solid 0.01in black;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    margin: 0 0 0.2in 0;
+}
+
+.cards-cont{
+    background-color: red;
+    position: absolute;
+    width: 10.6in;
+    display: flex;
+    height: 7.2in;
+    margin: 0.5in 0 0 0.5in;
+    outline: 0.1in solid rgb(255, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 0.2in;
+    z-index: 1;
+}
+
+/*cards style*/
+.card{
+    background-color: red;
+    width: 2.5in;
+    min-width: 2.5in;
+    max-width: 2.5in;
+    height: 3.5in;
+    min-height: 3.5in;
+    max-height: 3.5in;
+}

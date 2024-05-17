@@ -1,0 +1,149 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #1c1c1c;
+}
+#template{
+    display: none;
+}
+#spells{
+    background-color: lightgrey;
+    width: 115mm;
+    padding: 10mm;
+    left: -100%;
+    position: absolute;
+}
+#spells .spell{
+    background-color: #ffffff;
+    box-shadow: 0.5em 0.5em 1em black;
+    padding: 5mm;
+}
+/*pages style*/
+#pages{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.page{
+    min-width: 210mm;
+    max-width: 210mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    box-sizing: border-box;
+    background-color: white;
+    page-break-after: always;
+}
+.a5_cont{
+    min-width: 148mm;
+    max-width: 148mm;
+    position: absolute;
+    margin: 43.5mm 0 0 31mm;
+    box-sizing: border-box;
+    outline: 10mm solid white;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+.cut_lines_v, .cut_lines_h{
+    border: 1px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.cut_lines_v{
+    border-style: hidden solid;
+    width: 148mm;
+    height: 277mm;
+    margin: 10mm 0 0 31mm;
+}
+.cut_lines_h{  
+    border-style: solid hidden;
+    width: 190mm;
+    height: 210mm;
+    margin: 43.5mm 0 0 10mm;
+}
+.a5_canvas{
+    min-width: 115mm;
+    max-width: 115mm;
+    max-height: 190mm;
+    height: min-content;
+    margin: 10mm 0;
+    background-color: lightgrey;
+}
+.punchholes{
+    width: 20mm;
+    height: 210mm;
+    box-sizing: border-box;
+}
+/*spells style*/
+.tab{
+    display: inline-block;
+    margin-left: 2em;
+}
+.spell{
+    font-family: Kurland;
+    font-size: 2mm;
+    margin-bottom: 1.5em;
+}
+.spell .name{
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-size: 2em;
+}
+.spell .level{
+    line-height: 3mm;
+    font-style: italic;
+}
+.description{
+    margin-top: 1mm;
+    white-space: pre-wrap;
+}
+.higher_level_desc{
+    white-space: pre-wrap;
+}
+/*tables in spell description*/
+.description table{
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 3mm;
+}
+
+.description tr{
+    text-align: center;
+}
+
+.description td:first-child,
+.description th:first-child{
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@font-face {
+    font-family: Cassanova-Demo;
+    src: url(fonts/Cassanova-Demo.otf);
+}
+@font-face {
+    font-family: Kurland;
+    src: url(fonts/Kurland.otf);
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;
+      display: block;
+    }
+    #spells{
+        display: none;
+    }
+    .a5_canvas{
+        background-color: #ffffff;
+    }
+}
