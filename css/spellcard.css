@@ -1,0 +1,99 @@
+/* .card{
+    width: 2.5in;
+    max-width: 2.5in;
+    height: 3.5in;
+    max-height: 3.5in;
+    padding: 0.1in;
+    padding-bottom: 0.05in;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow:column nowrap;
+    background-color: #4c3d03;
+} */
+
+/* 
+.card-name-container{
+    color: black;
+    font-family: "Colus";
+    font-size: 0.15in;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    padding-top: 0.01in;
+    min-height: fit-content;
+    width: 100%;
+    border-radius: 0.08in 0.08in 0px 0px;
+}
+ */
+
+/* 
+.separator{
+    color:white;
+    font-size: 0.075in;
+    min-height: 1.4em;
+    font-family: "Merriweather";
+    text-align: center;
+    background-color: #4c3d03;
+    height: fit-content;
+} */
+
+/* .properties-container{
+    height: 0.62in;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.02in;
+    justify-content:space-between;
+} */
+
+/* 
+.property-container{
+    height: 0.3in;
+    width: 1.14in;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+} */
+/* .property-name{
+    color:#4c3d03;
+    font-size: 0.08in;
+    font-family: "Colus";
+    font-weight: bold;
+    text-align: center;
+}
+.property-value{
+    color:black;
+    font-size: 0.075in;
+    font-family: "Merriweather";
+    text-align: center;
+} */
+
+/* .description, .hl_description{
+    color: black;
+    font-size: 0.075in;
+    font-family: "Merriweather_Bold";
+    background-color: white;
+    padding:0.07in;
+    height: max-content;
+} */
+/* .hl_description{
+    border-radius: 0 0 0.08in 0.08in;
+}
+.class-name-container{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.class-name{
+    color: white;
+    font-family: "Colus";
+    font-weight: bold;
+    font-size: 0.15in;
+    width: max-content;
+    height: max-content;
+}
+.logo{
+    height: 0.2in;
+    vertical-align: bottom;
+} */

@@ -11,7 +11,6 @@
     <body>   
         <div class="top-bar">
             <div class="button journal" onclick="location.href='../html/journal.html';"><div class="title">Журнал персонажа</div></div>
-            <!-- <div class="button spellbook" onclick="location.href='../html/spellbook.html';"><div class="title">Книга заклинаний</div></div> -->
             <div class="button spellcards" onclick="location.href='../html/spellcards.html';"><div class="title">Карточки заклинаний</div></div>
         </div>
         <div id="journal">
@@ -666,105 +665,79 @@
                 <page-a5>
                     <h2>Характеристики</h2>
                     <div class="w-cont" id="ability-scores">
-                        <div class="score-cont">
-                            Сила
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                                <div class="string"><div class="value"></div>Атлетика</div>
-                            </div>
-                        </div>
-                        <div class="score-cont">
-                            Ловкость
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                                <div class="string"><div class="value"></div>Акробатика</div>
-                                <div class="string"><div class="value"></div>Ловкость рук</div>
-                                <div class="string"><div class="value"></div>Скрытность</div>
-                            </div>
-                        </div>
-                        <div class="score-cont">
-                            Телосложение
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                            </div>
-                        </div>
-                        <div class="score-cont">
-                            Интеллект
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                                <div class="string"><div class="value"></div>Анализ</div>
-                                <div class="string"><div class="value"></div>История</div>
-                                <div class="string"><div class="value"></div>Магия</div>
-                                <div class="string"><div class="value"></div>Природа</div>
-                                <div class="string"><div class="value"></div>Религия</div>
-                            </div>                           
-                        </div>
-                        <div class="score-cont">
-                            Мудрость
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                                <div class="string"><div class="value"></div>Внимательность</div>
-                                <div class="string"><div class="value"></div>Выживание</div>
-                                <div class="string"><div class="value"></div>Медицина</div>
-                                <div class="string"><div class="value"></div>Проницательность</div>
-                                <div class="string"><div class="value"></div>Уход за животными</div>
-                            </div>                           
-                        </div>
-                        <div class="score-cont">
-                            Харизма
-                            <div class="score"></div>
-                            <div class="mod"></div>
-                            <div class="border">
-                                <div class="string"><div class="value"></div>Спасбросок</div>
-                                <div class="string"><div class="value"></div>Выступление</div>
-                                <div class="string"><div class="value"></div>Запугивание</div>
-                                <div class="string"><div class="value"></div>Обман</div>
-                                <div class="string"><div class="value"></div>Убеждение</div>
-                            </div>                          
-                        </div>
-                    </div>
-                    <div class="w-cont" id="battle-scores">
-                        <div class="score-cont">
-                            Класс доспеха
-                            <div class="circle"></div>
-                        </div>
-                        <div class="score-cont">
-                            Инициатива
-                            <div class="circle"></div>
-                        </div>
-                        <div class="score-cont">
-                            Бонус владения
-                            <div class="circle"></div>
-                        </div>
-                        <div class="score-cont">
-                            Скорость
-                            <div class="circle"></div>
-                        </div>
-                        <div class="score-cont">
-                            Восприятие
-                            <div class="circle"></div>
-                        </div>
-                        <div class="score-cont">
-                            Вдохновение
-                            <div class="circle"></div>
-                        </div>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Сила</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                                <tr><td>⦾</td><td>Атлетика</td></tr>
+                            </tbody>
+                        </table>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Ловкость</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                                <tr><td>⦾</td><td>Акробатика</td></tr>
+                                <tr><td>⦾</td><td>Ловкость рук</td></tr>
+                                <tr><td>⦾</td><td>Скрытность</td></tr>
+                            </tbody>
+                        </table>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Харизма</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                                <tr><td>⦾</td><td>Выступление</td></tr>
+                                <tr><td>⦾</td><td>Запугивание</td></tr>
+                                <tr><td>⦾</td><td>Обман</td></tr>
+                                <tr><td>⦾</td><td>Убеждение</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="stats-pic"></div>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Телосложение</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                            </tbody>
+                        </table>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Интеллект</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                                <tr><td>⦾</td><td>Анализ</td></tr>
+                                <tr><td>⦾</td><td>История</td></tr>
+                                <tr><td>⦾</td><td>Магия</td></tr>
+                                <tr><td>⦾</td><td>Природа</td></tr>
+                                <tr><td>⦾</td><td>Религия</td></tr>
+                            </tbody>
+                        </table>
+                        <table class="perk">
+                            <thead>
+                                <tr><td colspan="2">Мудрость</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>⦾</td><td>Спасбросок</td></tr>
+                                <tr><td>⦾</td><td>Внимательность</td></tr>
+                                <tr><td>⦾</td><td>Выживание</td></tr>
+                                <tr><td>⦾</td><td>Медицина</td></tr>
+                                <tr><td>⦾</td><td>Проницательность</td></tr>
+                                <tr><td>⦾</td><td>Уход за животными</td></tr>
+                            </tbody>
+                        </table>                  
                     </div>
                     <div class="w-cont" id="hits">
                         <div class="field-cont">
                             Уровень и<br>опыт
                             <div class="field exp">
                                 <div class="up">Уровень</div>
-                                <div class="line"></div>
                                 <div class="down">Опыт</div>
                             </div>
                         </div>
@@ -772,7 +745,6 @@
                             Текущие<br>хиты
                             <div class="field curr">
                                 <div class="up">Максимум</div>
-                                <div class="line"></div>
                                 <div class="down">Остаток</div>
                             </div>
                         </div>
@@ -780,7 +752,6 @@
                             Кость<br>хитов
                             <div class="field dice">
                                 <div class="up">Кости</div>
-                                <div class="line"></div>
                                 <div class="down">Потрачено</div>
                             </div>
                         </div>
@@ -793,12 +764,11 @@
                             Спаброски<br>от смерти
                             <div class="field dead">
                                 <div class="up">Успехи</div>
-                                <div class="line"></div>
                                 <div class="down">Провалы</div>
                             </div>
                         </div>
                     </div>
-                    <h2 style="margin-top: 5mm;">Состояния</h2>
+                    <h2 style="margin-top: 0mm;">Состояния</h2>
                     <table id="conditions">
                         <thead>
                             <tr>

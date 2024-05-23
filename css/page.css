@@ -23,7 +23,7 @@ page-a5{
     height: 210mm;
     min-height: 210mm;
     max-height: 210mm;
-    padding: 10mm;
+    padding: 10mm 7mm;
     box-sizing: border-box; 
     font-size: 2mm;
 }

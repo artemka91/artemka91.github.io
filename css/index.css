@@ -94,6 +94,9 @@ html, body{
     .top-bar {
         display: none;
     }
+    html, body{
+        background-image: none;
+    }
 }
 
 @font-face {
@@ -103,7 +106,7 @@ html, body{
 
 @font-face {
     font-family: Colus;
-    src: url(fonts/Colus.ttf);
+    src: url(../fonts/Colus.ttf);
 }
 
 @font-face {
@@ -113,10 +116,10 @@ html, body{
 
 @font-face {
     font-family: Merriweather;
-    src: url(fonts/Merriweather.ttf);
+    src: url(../fonts/Merriweather.ttf);
 }
 
 @font-face {
     font-family: Merriweather_Bold;
-    src: url(fonts/Merriweather_Bold.ttf);
+    src: url(../fonts/Merriweather_Bold.ttf);
 }

@@ -314,58 +314,39 @@
 }
 
 /*ability-scores*/
-.battle-sheets #ability-scores .score-cont{
+.battle-sheets #ability-scores{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    height: 70mm;
+}
+
+.battle-sheets #ability-scores .stats-pic{
+    height: 70mm;
+    width: 40mm;
+    background-image: url("../img/stats.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.battle-sheets #ability-scores .perk{
+    height: fit-content;
+    min-width: 45mm;
     font-size: 4mm;
-    font-weight: bold;
-    letter-spacing: -0.05em;
+    width: fit-content;
+    line-height: 3mm;
+    border: 0;
 }
 
-.battle-sheets #ability-scores .score-cont .score{
+.battle-sheets #ability-scores .perk thead td:nth-child(1){
+    text-transform: uppercase;
+    border-bottom: dotted 0.1em black;
+}
+
+.battle-sheets #ability-scores .perk tbody td:nth-child(1){
     width: 10mm;
-    height: 5mm;
-    border: solid 0.1em black;
-    border-bottom: 0;
-    border-radius: 2mm 2mm 0 0;
-    z-index: 0;
-}
-
-.battle-sheets #ability-scores .score-cont .mod{
-    width: 10mm;
-    height: 10mm;
-    border: solid 0.1em black;
-    border-radius: 0 0 2mm 2mm;
-    z-index: 1;
-    background-color: #ffffff;
-}
-
-.battle-sheets #ability-scores .score-cont .border{
-    margin-top: -5mm;
-    z-index: 0;
-    border-radius: 2mm;
-    border: solid 0.1em black;
-    padding: 5mm 1mm 1mm 0.5mm;
-    font-weight: normal;
-}
-
-.battle-sheets #ability-scores .score-cont .border .string{
-    font-size: 3.2mm;
-    padding: 0.2em 0 0 0;
-    line-height: 2.4mm;
-}
-
-.battle-sheets #ability-scores .score-cont .border .value{
-    width: 5mm;
-    margin: 0 0.1em 0 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
-}
-
-.battle-sheets #ability-scores .score-cont .border .value::before{
-    content: "⦾__";
 }
 
 /*battle scores*/
@@ -455,14 +436,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-
-.battle-sheets #hits .field-cont .exp .line,
-.battle-sheets #hits .field-cont .curr .line,
-.battle-sheets #hits .field-cont .dice .line,
-.battle-sheets #hits .field-cont .dead .line{
-    height: 0.05em;
-    background-color: #000000;
 }
 
 /* conditions, attack & abilities tables*/
